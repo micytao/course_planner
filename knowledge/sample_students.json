@@ -1,0 +1,167 @@
+[
+  {
+    "id": "aroha",
+    "name": "Aroha",
+    "description": "NZ Year 13 student interested in health, considering BHlth or BSc Psychology.",
+    "demo_narrative": "Demonstrates cross-faculty disambiguation and the new BHlth programme.",
+    "background": {
+      "qualification_type": "NCEA",
+      "has_ue": true,
+      "has_maths": true,
+      "has_physics": false,
+      "has_chemistry": true,
+      "domestic": true
+    },
+    "interests": ["health", "psychology", "wellbeing", "helping people"],
+    "suggested_faculty": "health",
+    "suggested_degree": "BHlth",
+    "suggested_major": "Psychology",
+    "alternative_paths": [
+      {"degree": "BPsycSc", "faculty": "science", "reason": "Dedicated psychology degree with specialised minors"},
+      {"degree": "BA", "faculty": "arts", "major": "Psychology", "reason": "Broader liberal arts context"}
+    ],
+    "year1_plan": [
+      {"course": "HLTH101", "semester": "S1", "points": 15, "note": "Core - Introduction to Health"},
+      {"course": "PSYC105", "semester": "S1", "points": 15, "note": "Major - Introductory Psychology A"},
+      {"course": "HLTH106", "semester": "S2", "points": 15, "note": "Core - Māori Health Issues"},
+      {"course": "PSYC106", "semester": "S2", "points": 15, "note": "Major - Introductory Psychology B"},
+      {"course": "HLTH105", "semester": "S2", "points": 15, "note": "Core - Human Body Systems"},
+      {"course": "STAT101", "semester": "S1", "points": 15, "note": "Elective - Statistics (recommended for Psychology)"},
+      {"course": "SCIE101", "semester": "S1", "points": 15, "note": "Elective - Science, Society and Me"},
+      {"course": "PSYC107", "semester": "S2", "points": 15, "note": "Major - Foundations of Psychological Science"}
+    ]
+  },
+  {
+    "id": "james",
+    "name": "James",
+    "description": "Strong in maths and physics, wants Engineering.",
+    "demo_narrative": "Demonstrates competitive First Year, discipline selection, and the Year 1 common core.",
+    "background": {
+      "qualification_type": "NCEA",
+      "has_ue": true,
+      "has_maths": true,
+      "has_physics": true,
+      "has_chemistry": true,
+      "domestic": true
+    },
+    "interests": ["engineering", "building things", "technology", "mechanical", "software"],
+    "suggested_faculty": "engineering",
+    "suggested_degree": "BE(Hons)",
+    "suggested_major": "Mechanical Engineering",
+    "alternative_paths": [
+      {"degree": "BE(Hons)", "faculty": "engineering", "major": "Software Engineering", "reason": "If more interested in coding than physical systems"},
+      {"degree": "BSc", "faculty": "science", "major": "Computer Science", "reason": "3-year degree if 4 years feels too long"}
+    ],
+    "year1_plan": [
+      {"course": "ENGR101", "semester": "S1", "points": 15, "note": "Core - Foundations of Engineering"},
+      {"course": "COSC131", "semester": "S1", "points": 15, "note": "Core - Programming for Engineers"},
+      {"course": "EMTH118", "semester": "S1", "points": 15, "note": "Core - Engineering Maths 1A"},
+      {"course": "PHYS101", "semester": "S1", "points": 15, "note": "Core - Engineering Physics A"},
+      {"course": "EMTH119", "semester": "S2", "points": 15, "note": "Core - Engineering Maths 1B"},
+      {"course": "ENGR102", "semester": "S2", "points": 15, "note": "Mechanical - Engineering Mechanics"},
+      {"course": "CHEM111", "semester": "S2", "points": 15, "note": "Mechanical - Chemistry"},
+      {"course": "ENGR100", "semester": "W", "points": 0, "note": "Core - Engineering Academic Skills"}
+    ]
+  },
+  {
+    "id": "mei",
+    "name": "Mei",
+    "description": "International student interested in business + law double degree.",
+    "demo_narrative": "Demonstrates LLB/BCom pathway, English competency check, and limited entry for 200-level LAWS.",
+    "background": {
+      "qualification_type": "International Baccalaureate",
+      "has_ue": true,
+      "has_maths": true,
+      "has_physics": false,
+      "has_chemistry": false,
+      "domestic": false
+    },
+    "interests": ["law", "business", "international", "commerce", "finance"],
+    "suggested_faculty": "law",
+    "suggested_degree": "LLB",
+    "suggested_major": null,
+    "double_degree": "BCom",
+    "double_degree_major": "Finance",
+    "alternative_paths": [
+      {"degree": "BCom", "faculty": "business", "major": "International Business", "reason": "If law is too competitive or not the right fit"},
+      {"degree": "LLB", "faculty": "law", "double": "BA", "reason": "LLB/BA if more interested in humanities than business"}
+    ],
+    "year1_plan": [
+      {"course": "LAWS101", "semester": "S1", "points": 30, "note": "LLB Core - Legal System (whole year)"},
+      {"course": "LAWS110", "semester": "S2", "points": 15, "note": "LLB Core - Legal Foundations"},
+      {"course": "ACCT102", "semester": "S1", "points": 15, "note": "BCom Core - Accounting"},
+      {"course": "ECON104", "semester": "S1", "points": 15, "note": "BCom Core - Microeconomics"},
+      {"course": "MGMT100", "semester": "S2", "points": 15, "note": "BCom Core - Management"},
+      {"course": "STAT101", "semester": "S2", "points": 15, "note": "BCom Core - Statistics"},
+      {"course": "MATH102", "semester": "S1", "points": 15, "note": "Finance prerequisite - Maths 1A"}
+    ],
+    "notes": "International students must demonstrate English competency (IELTS 6.0 overall, 5.5 minimum per band for undergraduate). LAWS 200-level is limited entry — competitive GPA from Year 1 determines entry."
+  },
+  {
+    "id": "tane",
+    "name": "Tāne",
+    "description": "Wants to be a teacher, passionate about te reo Māori.",
+    "demo_narrative": "Demonstrates BTchLn endorsement selection, Children's Act requirements, and special application process.",
+    "background": {
+      "qualification_type": "NCEA",
+      "has_ue": true,
+      "has_maths": true,
+      "has_physics": false,
+      "has_chemistry": false,
+      "domestic": true
+    },
+    "interests": ["teaching", "te reo Māori", "children", "education", "primary school"],
+    "suggested_faculty": "education",
+    "suggested_degree": "BTchLn",
+    "suggested_major": "Mātauranga Māori",
+    "alternative_paths": [
+      {"degree": "BTchLn", "faculty": "education", "major": "Primary", "reason": "If wanting mainstream primary teaching"},
+      {"degree": "BYCL", "faculty": "education", "reason": "If more interested in youth work than classroom teaching"}
+    ],
+    "year1_plan": [
+      {"course": "AKOT101", "semester": "S1", "points": 15, "note": "Core - Te Tiriti o Waitangi"},
+      {"course": "AKOM191", "semester": "S1", "points": 15, "note": "Mātauranga Māori endorsement"},
+      {"course": "AKOM192", "semester": "S1", "points": 15, "note": "Mātauranga Māori endorsement"},
+      {"course": "AKOM193", "semester": "S2", "points": 15, "note": "Mātauranga Māori endorsement"},
+      {"course": "AKOM194", "semester": "S2", "points": 15, "note": "Mātauranga Māori endorsement"},
+      {"course": "AKOM195", "semester": "S2", "points": 15, "note": "Mātauranga Māori endorsement"},
+      {"course": "AKOA161", "semester": "S2", "points": 15, "note": "Core - Practice Exploration 1"},
+      {"course": "AKOT110", "semester": "S1", "points": 15, "note": "Endorsement common course"}
+    ],
+    "notes": "BTchLn requires special application by 1 December (domestic). Includes interview, literacy/numeracy tests, referee reports, police vetting, and Children's Act 2014 compliance."
+  },
+  {
+    "id": "sarah",
+    "name": "Sarah",
+    "description": "Doesn't know what she wants to study.",
+    "demo_narrative": "Demonstrates the full triage flow from scratch, landing on BA with exploratory major options.",
+    "background": {
+      "qualification_type": "NCEA",
+      "has_ue": true,
+      "has_maths": false,
+      "has_physics": false,
+      "has_chemistry": false,
+      "domestic": true
+    },
+    "interests": ["not sure", "enjoyed English at school", "liked history", "interested in social media"],
+    "suggested_faculty": "arts",
+    "suggested_degree": "BA",
+    "suggested_major": "Media and Communication",
+    "alternative_paths": [
+      {"degree": "BA", "faculty": "arts", "major": "English", "reason": "If most passionate about reading and writing"},
+      {"degree": "BA", "faculty": "arts", "major": "History", "reason": "If drawn to understanding the past"},
+      {"degree": "BC", "faculty": "arts", "major": "Communication Strategy and Practice", "reason": "If social media / communication career is the goal"}
+    ],
+    "year1_plan": [
+      {"course": "ARTS102", "semester": "S1", "points": 15, "note": "BA Core - Problems, Questions, Evidence"},
+      {"course": "MAOR165", "semester": "S1", "points": 15, "note": "BA Core - Culture and Identity"},
+      {"course": "WRIT101", "semester": "S2", "points": 15, "note": "BA Core - Writing for Academic Success"},
+      {"course": "COMS101", "semester": "S1", "points": 15, "note": "Exploring Media & Communication"},
+      {"course": "ENGL102", "semester": "S1", "points": 15, "note": "Exploring English"},
+      {"course": "HIST128", "semester": "S2", "points": 15, "note": "Exploring History"},
+      {"course": "COMS105", "semester": "S2", "points": 15, "note": "Exploring Digital Communication"},
+      {"course": "PSYC105", "semester": "S2", "points": 15, "note": "Exploring Psychology (elective)"}
+    ],
+    "notes": "BA is perfect for exploring — take courses across multiple subjects in Year 1 and declare your major later. All three Schedule C courses (ARTS102, MAOR165, WRIT101) must be completed."
+  }
+]

@@ -1,0 +1,176 @@
+{
+  "BA": {
+    "majors": [
+      {"name": "Anthropology", "required_100": ["15 pts 100-level ANTH"], "required_200": ["45 pts 200-level ANTH incl. ANTH301 at 300-level"], "required_300": ["60 pts 300-level ANTH incl. ANTH301"], "honours_req": "B average at 300-level"},
+      {"name": "Art History and Theory", "required_100": ["30 pts 100-level ARTH"], "required_200": ["45 pts 200-level ARTH"], "required_300": ["60 pts 300-level ARTH"], "honours_req": "B average at 300-level"},
+      {"name": "Chinese", "required_100": ["CHIN155"], "required_200": [], "required_300": ["CHIN352 or equivalent"], "honours_req": "B+ in CHIN352"},
+      {"name": "Cinema Studies", "required_100": ["30 pts 100-level CINE"], "required_200": ["45 pts 200-level CINE"], "required_300": ["60 pts 300-level CINE"]},
+      {"name": "Classics", "required_100": ["30 pts 100-level CLAS"], "required_200": ["45 pts 200-level CLAS"], "required_300": ["60 pts 300-level CLAS"]},
+      {"name": "Economics", "required_100": ["ECON104", "ECON105"], "required_200": ["One of ECON202/207", "One of ECON203/208", "One of ECON201/206"], "required_300": ["60 pts 300-level ECON"]},
+      {"name": "Education", "required_100": ["EDUC101 or EDUC103"], "required_200": ["45 pts 200-level EDUC"], "required_300": ["60 pts 300-level EDUC"]},
+      {"name": "English", "required_100": ["ENGL102 or ENGL103"], "required_200": ["45 pts 200-level ENGL"], "required_300": ["60 pts 300-level ENGL"]},
+      {"name": "European and European Union Studies", "required_100": ["30 pts 100-level EURA"], "required_200": ["45 pts 200-level EURA"], "required_300": ["60 pts 300-level EURA"]},
+      {"name": "French", "required_100": ["30 pts 100-level FREN"], "required_200": ["45 pts 200-level FREN"], "required_300": ["60 pts 300-level FREN incl. FREN301 or FREN330+FREN331"]},
+      {"name": "Geography", "required_100": ["30 pts 100-level GEOG"], "required_200": ["45 pts 200-level GEOG"], "required_300": ["60 pts 300-level GEOG incl. GEOG309"]},
+      {"name": "German", "required_100": ["30 pts 100-level GRMN"], "required_200": ["45 pts 200-level GRMN"], "required_300": ["60 pts 300-level GRMN"]},
+      {"name": "History", "required_100": ["30 pts 100-level HIST"], "required_200": ["45 pts 200-level HIST"], "required_300": ["60 pts 300-level HIST"], "honours_req": "B average at 300-level"},
+      {"name": "Human Services", "required_100": ["HSRV103", "HSRV104"], "required_200": ["45 pts 200-level HSRV"], "required_300": ["60 pts 300-level HSRV"]},
+      {"name": "Japanese", "required_100": ["30 pts 100-level JAPA"], "required_200": ["45 pts 200-level JAPA"], "required_300": ["JAPA352 or equivalent"]},
+      {"name": "Linguistics", "required_100": ["30 pts 100-level LING"], "required_200": ["LING217", "LING212", "15 pts 200-level LING"], "required_300": ["LING310", "30 pts 300-level LING"]},
+      {"name": "Māori and Indigenous Studies", "required_100": ["Two of MAOR107/108/170/172"], "required_200": ["30 pts 200-level MAOR"], "required_300": ["60 pts 300-level MAOR"]},
+      {"name": "Mathematical Sciences Education", "required_100": ["MATH102", "15 pts MATH/STAT", "EDUC101 or EDUC103"], "required_200": ["EDMA201", "30 pts 200-level MATH/STAT"], "required_300": ["EDMA301", "45 pts 300-level MATH/STAT"], "has_minor": false},
+      {"name": "Mathematics", "required_100": ["MATH103 or MATH109 or MATH199"], "required_200": ["45 pts from MATH201/202/203/220/240"], "required_300": ["60 pts from MATH301-394"]},
+      {"name": "Media and Communication", "required_100": ["30 pts 100-level COMS/Media"], "required_200": ["45 pts 200-level Media & Communication"], "required_300": ["60 pts 300-level Media & Communication"]},
+      {"name": "Music", "required_100": ["MUSA100", "One of MUSA126/132/152"], "required_200": ["One of MUSA250/231/233/234/236/237", "30 pts 200-level MUSA"], "required_300": ["60 pts 300-level MUSA"]},
+      {"name": "Philosophy", "required_100": ["30 pts 100-level PHIL"], "required_200": ["45 pts 200-level PHIL incl. PHIL233"], "required_300": ["60 pts 300-level PHIL incl. one of PHIL305/310/311"]},
+      {"name": "Political Science and International Relations", "required_100": ["30 pts 100-level POLS"], "required_200": ["45 pts from POLS201-249"], "required_300": ["60 pts from POLS301-349"], "honours_req": "B average at 300-level"},
+      {"name": "Psychology", "required_100": ["PSYC105", "PSYC106"], "required_200": ["PSYC206", "45 pts 200-level PSYC"], "required_300": ["75 pts 300-level PSYC"]},
+      {"name": "Russian", "required_100": ["30 pts 100-level RUSS"], "required_200": ["45 pts 200-level RUSS"], "required_300": ["60 pts 300-level RUSS incl. RUSS301 or RUSS330+RUSS331"]},
+      {"name": "Sociology", "required_100": ["15 pts 100-level SOCI"], "required_200": ["45 pts 200-level SOCI incl. SOCI201"], "required_300": ["60 pts 300-level SOCI"], "honours_req": "B average at 300-level"},
+      {"name": "Spanish", "required_100": ["30 pts 100-level SPAN"], "required_200": ["45 pts 200-level SPAN"], "required_300": ["60 pts 300-level SPAN incl. one of SPAN203/205/305"]},
+      {"name": "Statistics", "required_100": ["MATH103 or MATH109 or MATH199"], "required_200": ["STAT213", "30 pts STAT201-294 incl. STAT211 or STAT221"], "required_300": ["60 pts STAT301-394 incl. 45 from STAT313/314/317/318/319"]},
+      {"name": "Te Reo Māori", "required_100": ["TREO111 and/or TREO112"], "required_200": ["TREO211", "TREO212"], "required_300": ["60 pts 300-level incl. TREO311 and TREO312"]},
+      {"name": "Writing", "required_100": ["15 pts 100-level WRIT", "15 pts from WRIT/ENGL/DISC101/MAOR110"], "required_200": ["30 pts 200-level WRIT", "15 pts from WRIT/ENGL/DISC"], "required_300": ["WRIT301", "30 pts from WRIT/ENGL"], "notes": "Subject to CUAP and TEC approval."}
+    ],
+    "specialisations": [
+      {"name": "Creative Industries and Contemporary Practice", "min_points": 225},
+      {"name": "Cultural Heritage", "min_points": 225},
+      {"name": "Global Societies and Cultures", "min_points": 225},
+      {"name": "International Affairs", "min_points": 225},
+      {"name": "Language, Brain and Behaviour", "min_points": 225},
+      {"name": "Philosophy, Politics and Economics", "min_points": 225},
+      {"name": "Society, Diversity, Change", "min_points": 225}
+    ]
+  },
+  "BC": {
+    "majors": [
+      {"name": "Journalism", "notes": "Limited entry. COMS233/331/332 — must complete within 3 consecutive semesters."},
+      {"name": "Communication Strategy and Practice"},
+      {"name": "Tauwhitinga Māori: Māori Communication Strategy and Practice"},
+      {"name": "Political Communication"}
+    ]
+  },
+  "BDigiScreen(Hons)": {
+    "majors": [
+      {"name": "Animation"}, {"name": "Cinematic Arts"}, {"name": "Game Arts"},
+      {"name": "Game Development"}, {"name": "Screen Sound"}, {"name": "Screenwriting"}
+    ]
+  },
+  "BSEnS": {
+    "majors": [
+      {"name": "Environmental Policy, Governance and Social Justice"},
+      {"name": "Indigenous Knowledge and Sustainable Partnerships"},
+      {"name": "Social Action, Community and Global Development"},
+      {"name": "Sustainable Business, Enterprise and Economics"}
+    ]
+  },
+  "BFA": {
+    "majors": [
+      {"name": "Graphic Design", "notes": "Limited entry (12 places). Application by 30 September."},
+      {"name": "Moving Image", "notes": "Limited entry (12 places). Application by 30 September."},
+      {"name": "Painting", "notes": "Limited entry (12 places). Application by 30 September."},
+      {"name": "Photography", "notes": "Limited entry (12 places). Application by 30 September."},
+      {"name": "Sculpture", "notes": "Limited entry (12 places). Application by 30 September."}
+    ]
+  },
+  "MusB": {
+    "majors": [
+      {"name": "Composition"}, {"name": "Music Production"}, {"name": "Music Studies"},
+      {"name": "Performance", "notes": "Audition required."}
+    ]
+  },
+  "BCom": {
+    "majors": [
+      {"name": "Accounting", "required_100": ["ACCT103"], "required_200": ["ACCT211", "ACCT222"], "required_300": ["60 pts 300-level ACCT"]},
+      {"name": "Economics", "required_100": ["ECON104", "ECON105"], "required_200": ["ECON202 or ECON207", "ECON203 or ECON208", "ECON201 or ECON206"], "required_300": ["60 pts 300-level ECON"]},
+      {"name": "Finance", "required_100": ["MATH101 or MATH102"], "required_200": ["FINC201", "FINC203"], "required_300": ["60 pts 300-level FINC incl. 30 from FINC301/311/312"]},
+      {"name": "Human Resource Management", "required_200": ["MGMT206", "MGMT207", "MGMT232"], "required_300": ["MGMT303", "MGMT308", "MGMT331", "15 pts from MGMT304/306/330/332"]},
+      {"name": "Information Systems", "required_200": ["INFO223", "15 pts INFO", "15 pts INFO/COSC/SENG"], "required_300": ["45 pts INFO", "15 pts INFO/COSC/SENG"]},
+      {"name": "Innovation and Entrepreneurship", "required_100": ["MGMT170", "MKTG100"], "required_200": ["MGMT241", "MGMT223", "15 pts from MGMT243/244/291"], "required_300": ["Structured MGMT courses"]},
+      {"name": "International Business", "required_100": ["MKTG100", "MGMT170"], "required_200": ["ECON222", "FINC201", "MGMT221", "15 pts elective"], "required_300": ["MGMT332", "MGMT344", "MGMT346", "15 pts elective"]},
+      {"name": "Management", "required_100": ["MGMT170"], "required_200": ["MGMT206", "MGMT232", "INFO261"], "required_300": ["MGMT344", "45 pts from listed MGMT"]},
+      {"name": "Marketing", "required_100": ["MKTG100"], "required_200": ["MKTG201", "MKTG202", "MKTG204", "15 pts from MKTG205/230"], "required_300": ["60 pts 300-level MKTG"]},
+      {"name": "Operations and Supply Chain Management", "required_100": ["MGMT170"], "required_200": ["45 pts from MGMT270/272/273/274/230"], "required_300": ["60 pts from MGMT372/374/375/376/344"]},
+      {"name": "Taxation and Accounting", "required_100": ["ACCT103", "ACCT156 or LAWS101"], "required_200": ["ACCT211 or ACCT222", "ACCT254"], "required_300": ["ACCT358", "ACCT359", "30 pts ACCT"]}
+    ],
+    "minors_only": [
+      {"name": "Business Analytics"}, {"name": "Business and Sustainability"},
+      {"name": "Entrepreneurship"}, {"name": "Innovation"}
+    ]
+  },
+  "BTchLn": {
+    "endorsements": [
+      {"name": "Early Childhood", "group": 1, "notes": "Year 1: AKOE170-174, AKOT100, AKOT110. Year 2: AKOE270, AKOE272, AKOT210, AKOT230, AKOT232. Year 3: AKOA363/364, AKOE371-374, AKOT310."},
+      {"name": "Primary", "group": 2, "notes": "Year 1: AKOP150-154, AKOT100, AKOT110. Year 2: AKOP250-254, AKOT210. Year 3: AKOA361/362, AKOP350-353, AKOT310."},
+      {"name": "Mātauranga Māori", "group": 3, "notes": "Year 1: AKOM191-195. Year 2: AKOM291-294, AKOT232. Year 3: AKOM391-394 plus choice of EC or Primary practice pathway."}
+    ]
+  },
+  "BE(Hons)": {
+    "disciplines": [
+      {"name": "Chemical and Process Engineering", "first_year_extras": ["CHEM111"], "places": 75, "minors": ["Bioprocess Engineering", "Sustainable Energy Engineering", "Environmental Process Engineering"]},
+      {"name": "Civil Engineering", "first_year_extras": ["CHEM111", "ENGR102"], "places": 240, "minors": ["Structural Engineering", "Water and Environmental Systems Engineering"]},
+      {"name": "Computer Engineering", "first_year_extras": ["COSC122 or MATH120"], "places": 30, "minors": ["Communications and Network Engineering"]},
+      {"name": "Electrical and Electronic Engineering", "first_year_extras": ["COSC122 or MATH120"], "places": 85, "minors": ["Power Engineering"]},
+      {"name": "Forest Engineering", "first_year_extras": ["CHEM111", "ENGR102"], "places": 20, "minors": []},
+      {"name": "Mechanical Engineering", "first_year_extras": ["CHEM111", "ENGR102"], "places": 145, "minors": ["Aerospace Engineering", "Biomedical Engineering"]},
+      {"name": "Mechatronics Engineering", "first_year_extras": ["ENGR102"], "places": 105, "minors": []},
+      {"name": "Software Engineering", "first_year_extras": ["COSC122", "MATH120"], "places": 50, "minors": []}
+    ]
+  },
+  "BHlth": {
+    "majors": [
+      {"name": "Exercise and Sport Nutrition"}, {"name": "Health Education"},
+      {"name": "Health Science"}, {"name": "Māori and Indigenous Health"},
+      {"name": "Mental Health and Addiction", "notes": "Practicum requires police vetting and Children's Act."},
+      {"name": "Physical Activity and Wellbeing"}, {"name": "Psychology"}, {"name": "Public Health"}
+    ]
+  },
+  "BSW(Hons)": {
+    "majors": [],
+    "notes": "Fixed programme — no majors or minors."
+  },
+  "BSport": {
+    "majors": [
+      {"name": "Physical Activity and Wellbeing"}, {"name": "Marketing and Management"},
+      {"name": "Performance Data Analysis"}, {"name": "Sport Coaching and Physical Education"},
+      {"name": "Strength and Conditioning"}, {"name": "Te Ao Hākinakina"}
+    ]
+  },
+  "LLB": {
+    "majors": [],
+    "notes": "No majors/minors — prescribed programme. Almost always double degree.",
+    "year1": ["LAWS101 (30 pts)", "LAWS110 (15 pts)", "75 pts non-law courses"],
+    "year2": ["LAWS203 (30 pts)", "LAWS204 (30 pts)", "LAWS205 (30 pts)", "LAWS206 (30 pts)"],
+    "year3_4": ["LAWS202", "LAWS301", "Elective law courses from Schedule E"]
+  },
+  "BCJ": {
+    "majors": [],
+    "notes": "No majors/minors — fixed programme."
+  },
+  "BSc": {
+    "majors": [
+      {"name": "Astronomy"}, {"name": "Biochemistry"}, {"name": "Biological Sciences"},
+      {"name": "Chemistry"}, {"name": "Computer Science"},
+      {"name": "Economics"}, {"name": "Environmental Science", "notes": "Requires a second major."},
+      {"name": "Finance"}, {"name": "Financial Engineering"},
+      {"name": "Geography"}, {"name": "Geology"}, {"name": "Linguistics"},
+      {"name": "Mathematical Sciences Education"}, {"name": "Mathematics"},
+      {"name": "Medicinal Chemistry"}, {"name": "Philosophy"},
+      {"name": "Physics"}, {"name": "Psychology"}, {"name": "Statistics"}
+    ]
+  },
+  "BDataSc": {
+    "majors": [
+      {"name": "Bioinformatics"}, {"name": "Business Analytics"},
+      {"name": "Data Science"}, {"name": "Population Health Data Science"},
+      {"name": "Spatial Data Science"}
+    ]
+  },
+  "BPsycSc": {
+    "group1_minors": [
+      {"name": "Forensic Psychology"}, {"name": "Māori and Indigenous Perspectives"},
+      {"name": "Neuroscience and Cognition"}, {"name": "Psychological Wellbeing"},
+      {"name": "Psychology for Common Good"}, {"name": "Workplace Psychology"}
+    ]
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "steps": [
+    {
+      "id": "study_level",
+      "question": "Are you looking at undergraduate (first degree) or postgraduate study?",
+      "options": [
+        {"value": "undergraduate", "label": "Undergraduate (degrees, diplomas, and certificates)", "next": "interest_area"},
+        {"value": "postgraduate", "label": "Postgraduate (honours, masters, PhD)", "next": "postgrad_note"}
+      ]
+    },
+    {
+      "id": "postgrad_note",
+      "question": "UC offers a wide range of postgraduate qualifications including Honours degrees, Postgraduate Certificates, Postgraduate Diplomas, Masters degrees (taught and research), and Doctorates (PhD and named doctorates). This course planner focuses on undergraduate study. For personalised postgraduate advice, please contact the relevant faculty or school directly, or visit canterbury.ac.nz/postgraduate.",
+      "hint": "Tip: If you already hold an undergraduate degree from UC or another university, many postgraduate programmes accept applications year-round. Check entry requirements and speak with a postgraduate coordinator in your area of interest.",
+      "options": [
+        {"value": "restart", "label": "I'd like to explore undergraduate options instead", "next": "interest_area"}
+      ],
+      "terminal": true
+    },
+    {
+      "id": "interest_area",
+      "question": "Which area interests you most?",
+      "options": [
+        {"value": "arts", "label": "People, Culture, Languages, History, Sustainability", "faculty": "arts", "next": "degree_select"},
+        {"value": "business", "label": "Business, Finance, Management, Marketing", "faculty": "business", "next": "degree_select"},
+        {"value": "education", "label": "Teaching, Working with Young People", "faculty": "education", "next": "degree_select"},
+        {"value": "engineering", "label": "Building Things, Technology, Computing, Engineering", "faculty": "engineering", "next": "degree_select"},
+        {"value": "health", "label": "Health, Wellbeing, Sport, Social Work", "faculty": "health", "next": "degree_select"},
+        {"value": "law", "label": "Law, Justice, Criminal Justice", "faculty": "law", "next": "degree_select"},
+        {"value": "science", "label": "Science, Environment, Data, Psychology", "faculty": "science", "next": "degree_select"},
+        {"value": "unsure", "label": "I'm not sure yet", "next": "explore_interests"}
+      ]
+    },
+    {
+      "id": "explore_interests",
+      "question": "No worries! What subjects did you enjoy at school? What kind of career can you see yourself in?",
+      "type": "free_text",
+      "next": "interest_area"
+    },
+    {
+      "id": "degree_select",
+      "question": "Based on your interest, here are the degrees available. Which appeals to you?",
+      "type": "dynamic",
+      "next": "major_select"
+    },
+    {
+      "id": "major_select",
+      "question": "Now let's choose your area of focus. Which major/specialisation interests you?",
+      "type": "dynamic",
+      "next": "background_check"
+    },
+    {
+      "id": "background_check",
+      "question": "To check you meet the entry requirements, tell us about your qualifications.",
+      "fields": [
+        {"id": "qualification_type", "label": "Qualification type", "options": ["NCEA", "Cambridge International", "International Baccalaureate", "Other NZ qualification", "Overseas qualification", "Mature student (20+)"]},
+        {"id": "has_ue", "label": "Do you have (or expect to have) University Entrance?", "type": "boolean"},
+        {"id": "has_maths", "label": "Have you studied Mathematics at Year 13 / Level 3?", "type": "boolean"},
+        {"id": "has_physics", "label": "Have you studied Physics at Year 13 / Level 3?", "type": "boolean"},
+        {"id": "has_chemistry", "label": "Have you studied Chemistry at Year 13 / Level 3?", "type": "boolean"},
+        {"id": "domestic", "label": "Are you a domestic (NZ/Australian) student?", "type": "boolean"}
+      ],
+      "next": "year1_plan"
+    },
+    {
+      "id": "year1_plan",
+      "question": "Here is your recommended Year 1 course plan!",
+      "type": "generated",
+      "next": "summary"
+    },
+    {
+      "id": "summary",
+      "question": "Summary of your course plan",
+      "type": "summary",
+      "terminal": true
+    }
+  ],
+  "cross_faculty_subjects": {
+    "psychology": {"faculties": ["arts", "health", "science"], "degrees": ["BA", "BHlth", "BSc", "BPsycSc"], "note": "Psychology is available across multiple faculties. BA Psychology (Arts) has a broad liberal arts context. BHlth Psychology (Health) focuses on health applications. BSc Psychology (Science) emphasises research methods. BPsycSc (Science) is a dedicated psychology degree with specialised minors."},
+    "economics": {"faculties": ["arts", "business"], "degrees": ["BA", "BCom"], "note": "BA Economics (Arts) is more theoretical. BCom Economics (Business) is more applied with business context."},
+    "geography": {"faculties": ["arts", "science"], "degrees": ["BA", "BSc"], "note": "BA Geography (Arts) focuses on human geography. BSc Geography (Science) focuses on physical geography."},
+    "computer_science": {"faculties": ["engineering", "science"], "degrees": ["BE(Hons)", "BSc"], "note": "BE(Hons) Software Engineering is a professional 4-year degree. BSc Computer Science is a 3-year science degree."},
+    "statistics": {"faculties": ["arts", "business", "science"], "degrees": ["BA", "BCom", "BSc", "BDataSc"], "note": "Available as a major in BA, BSc, or BDataSc, and as a Business Analytics minor in BCom."}
+  }
+}

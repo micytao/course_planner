@@ -1,0 +1,74 @@
+{
+  "ARTS102": {"code": "ARTS102", "title": "Problems, Questions, Evidence", "points": 15, "level": 100, "semesters": ["S1", "S2", "SU1"], "faculty": "arts", "prerequisites": [], "restrictions": []},
+  "MAOR165": {"code": "MAOR165", "title": "Tuakiri: Culture and Identity", "points": 15, "level": 100, "semesters": ["S1", "S2"], "faculty": "arts", "prerequisites": [], "restrictions": []},
+  "WRIT101": {"code": "WRIT101", "title": "Writing for Academic Success", "points": 15, "level": 100, "semesters": ["S1", "S2"], "faculty": "arts", "prerequisites": [], "restrictions": ["ENGL117"]},
+
+  "ACCT102": {"code": "ACCT102", "title": "Accounting and Financial Information", "points": 15, "level": 100, "semesters": ["S1", "S2"], "faculty": "business", "prerequisites": [], "restrictions": []},
+  "ACCT103": {"code": "ACCT103", "title": "Accounting and Taxation: An Introduction", "points": 15, "level": 100, "semesters": ["S1", "S2"], "faculty": "business", "prerequisites": ["ACCT102"], "restrictions": []},
+  "ECON104": {"code": "ECON104", "title": "Introduction to Microeconomics", "points": 15, "level": 100, "semesters": ["S1", "S2"], "faculty": "business", "prerequisites": [], "restrictions": ["ECON199"]},
+  "ECON105": {"code": "ECON105", "title": "Introduction to Macroeconomics", "points": 15, "level": 100, "semesters": ["S1", "S2"], "faculty": "business", "prerequisites": [], "restrictions": []},
+  "INFO123": {"code": "INFO123", "title": "Business Information Systems and Technology", "points": 15, "level": 100, "semesters": ["S1"], "faculty": "business", "prerequisites": [], "restrictions": ["ACIS123", "AFIS123", "AFIS124"]},
+  "MGMT100": {"code": "MGMT100", "title": "Fundamentals of Management", "points": 15, "level": 100, "semesters": ["S1", "S2"], "faculty": "business", "prerequisites": [], "restrictions": ["MGMT101"]},
+  "MKTG100": {"code": "MKTG100", "title": "Principles of Marketing", "points": 15, "level": 100, "semesters": ["S1", "S2"], "faculty": "business", "prerequisites": [], "restrictions": ["MGMT102"]},
+  "STAT101": {"code": "STAT101", "title": "Statistics 1", "points": 15, "level": 100, "semesters": ["SU2", "S1", "S2"], "faculty": "science", "prerequisites": [], "restrictions": ["STAT111", "STAT112", "DIGI103", "DATA101"]},
+  "BSNS201": {"code": "BSNS201", "title": "Business and Culture", "points": 15, "level": 200, "semesters": ["S1", "S2"], "faculty": "business", "prerequisites": ["Any 60 points"], "restrictions": []},
+
+  "COSC131": {"code": "COSC131", "title": "Introduction to Programming for Engineers", "points": 15, "level": 100, "semesters": ["S1", "S2"], "faculty": "engineering", "prerequisites": ["EMTH117 or MATH101 or NCEA L3 Maths"], "restrictions": ["COSC121"]},
+  "COSC121": {"code": "COSC121", "title": "Introduction to Computer Programming", "points": 15, "level": 100, "semesters": ["S1", "S2"], "faculty": "science", "prerequisites": [], "restrictions": ["COSC131"]},
+  "COSC122": {"code": "COSC122", "title": "Introduction to Computer Science", "points": 15, "level": 100, "semesters": ["SU2", "S2"], "faculty": "science", "prerequisites": ["COSC121 or COSC131"], "restrictions": []},
+  "EMTH117": {"code": "EMTH117", "title": "Engineering Mathematics Bridge", "points": 15, "level": 100, "semesters": ["S1"], "faculty": "engineering", "prerequisites": [], "restrictions": []},
+  "EMTH118": {"code": "EMTH118", "title": "Engineering Mathematics 1A", "points": 15, "level": 100, "semesters": ["S1", "S2"], "faculty": "engineering", "prerequisites": ["EMTH117 or B+ in MATH101 or NCEA L3 Maths"], "restrictions": ["MATH102", "MATH108", "MATH199"]},
+  "EMTH119": {"code": "EMTH119", "title": "Engineering Mathematics 1B", "points": 15, "level": 100, "semesters": ["SU2", "S2"], "faculty": "engineering", "prerequisites": ["EMTH118", "COSC131"], "restrictions": ["MATH103", "MATH109", "MATH199"]},
+  "ENGR100": {"code": "ENGR100", "title": "Engineering Academic Skills", "points": 0, "level": 100, "semesters": ["W"], "faculty": "engineering", "prerequisites": [], "restrictions": []},
+  "ENGR101": {"code": "ENGR101", "title": "Foundations of Engineering", "points": 15, "level": 100, "semesters": ["S1", "S2"], "faculty": "engineering", "prerequisites": [], "restrictions": []},
+  "ENGR102": {"code": "ENGR102", "title": "Engineering Mechanics", "points": 15, "level": 100, "semesters": ["S2"], "faculty": "engineering", "prerequisites": ["EMTH118 or MATH102"], "restrictions": []},
+  "ENGR200": {"code": "ENGR200", "title": "Engineering Work Experience", "points": 0, "level": 200, "semesters": ["A"], "faculty": "engineering", "prerequisites": ["Acceptance into professional year"], "restrictions": []},
+  "PHYS101": {"code": "PHYS101", "title": "Engineering Physics A", "points": 15, "level": 100, "semesters": ["SU2", "S1", "S2"], "faculty": "engineering", "prerequisites": ["PHYS111 or NCEA L3 Physics + Maths"], "restrictions": ["PHYS113", "PHYS112"]},
+  "PHYS111": {"code": "PHYS111", "title": "Physics Bridge", "points": 15, "level": 100, "semesters": ["S1"], "faculty": "science", "prerequisites": [], "restrictions": []},
+  "CHEM111": {"code": "CHEM111", "title": "Chemistry: Structure, Reactions and Purpose", "points": 15, "level": 100, "semesters": ["S1", "S2"], "faculty": "science", "prerequisites": [], "restrictions": []},
+  "CHEM114": {"code": "CHEM114", "title": "Chemistry Bridge", "points": 15, "level": 100, "semesters": ["S1"], "faculty": "science", "prerequisites": [], "restrictions": []},
+  "MATH101": {"code": "MATH101", "title": "Methods of Mathematics", "points": 15, "level": 100, "semesters": ["S1", "S2"], "faculty": "science", "prerequisites": [], "restrictions": []},
+  "MATH102": {"code": "MATH102", "title": "Mathematics 1A", "points": 15, "level": 100, "semesters": ["S1", "S2"], "faculty": "science", "prerequisites": ["MATH101 or NCEA L3 Maths"], "restrictions": ["MATH108", "MATH199", "EMTH118"]},
+  "MATH120": {"code": "MATH120", "title": "Discrete Mathematics", "points": 15, "level": 100, "semesters": ["S2"], "faculty": "science", "prerequisites": ["MATH102 or EMTH118"], "restrictions": []},
+
+  "LAWS101": {"code": "LAWS101", "title": "Legal System", "points": 30, "level": 100, "semesters": ["S1"], "faculty": "law", "prerequisites": [], "restrictions": [], "corequisites": ["LAWS110"]},
+  "LAWS110": {"code": "LAWS110", "title": "Legal Foundations", "points": 15, "level": 100, "semesters": ["S2"], "faculty": "law", "prerequisites": [], "restrictions": [], "corequisites": ["LAWS101"]},
+  "LAWS203": {"code": "LAWS203", "title": "Contract", "points": 30, "level": 200, "semesters": ["S1"], "faculty": "law", "prerequisites": ["LAWS101", "LAWS110"], "restrictions": [], "limited_entry": 350},
+  "LAWS204": {"code": "LAWS204", "title": "Torts", "points": 30, "level": 200, "semesters": ["S2"], "faculty": "law", "prerequisites": ["LAWS101", "LAWS110"], "restrictions": [], "limited_entry": 350},
+  "LAWS205": {"code": "LAWS205", "title": "Land Law", "points": 30, "level": 200, "semesters": ["S1"], "faculty": "law", "prerequisites": ["LAWS101", "LAWS110"], "restrictions": [], "limited_entry": 350},
+  "LAWS206": {"code": "LAWS206", "title": "Public Law", "points": 30, "level": 200, "semesters": ["S2"], "faculty": "law", "prerequisites": ["LAWS101", "LAWS110"], "restrictions": [], "limited_entry": 350},
+
+  "SCIE101": {"code": "SCIE101", "title": "Science, Society and Me", "points": 15, "level": 100, "semesters": ["S1", "S2"], "faculty": "science", "prerequisites": [], "restrictions": []},
+  "DATA101": {"code": "DATA101", "title": "Introduction to Data Science", "points": 15, "level": 100, "semesters": ["S1", "S2"], "faculty": "science", "prerequisites": ["MATH101 or EMTH117 or NCEA L3 Maths"], "restrictions": ["STAT101", "DIGI103"]},
+  "COSC262": {"code": "COSC262", "title": "Algorithms", "points": 15, "level": 200, "semesters": ["S1"], "faculty": "science", "prerequisites": ["COSC121 or COSC131", "COSC122"], "restrictions": []},
+  "DATA201": {"code": "DATA201", "title": "Data Wrangling", "points": 15, "level": 200, "semesters": ["S2"], "faculty": "science", "prerequisites": ["15 pts 100-level COSC/DATA/MATH/STAT or INFO125"], "restrictions": []},
+  "DATA203": {"code": "DATA203", "title": "Data Science Multivariable Methods", "points": 15, "level": 200, "semesters": ["S1"], "faculty": "science", "prerequisites": ["DATA101 or STAT101 or MATH120 or EMTH119", "MATH102 or MATH199 or EMTH118"], "restrictions": ["MATH203", "EMTH211"]},
+
+  "PSYC105": {"code": "PSYC105", "title": "Introductory Psychology - Brain, Behaviour and Cognition", "points": 15, "level": 100, "semesters": ["SU2", "S1"], "faculty": "science", "prerequisites": [], "restrictions": ["PSYC103", "PSYC104"]},
+  "PSYC106": {"code": "PSYC106", "title": "Introductory Psychology - Social, Personality and Developmental", "points": 15, "level": 100, "semesters": ["SU1", "S2"], "faculty": "science", "prerequisites": [], "restrictions": ["PSYC103", "PSYC104"]},
+  "PSYC107": {"code": "PSYC107", "title": "Foundations of Psychological Science", "points": 15, "level": 100, "semesters": ["SU1", "S2"], "faculty": "science", "prerequisites": [], "restrictions": []},
+  "SPSC114": {"code": "SPSC114", "title": "The Art and Science of Human Communication", "points": 15, "level": 100, "semesters": ["SU2", "S1"], "faculty": "science", "prerequisites": [], "restrictions": []},
+  "PSYC206": {"code": "PSYC206", "title": "Introductory Research Methods and Statistics", "points": 15, "level": 200, "semesters": ["SU2", "S1", "S2"], "faculty": "science", "prerequisites": ["15 pts 100-level PSYC", "45 pts overall"], "restrictions": []},
+
+  "HLTH101": {"code": "HLTH101", "title": "Hauora: Introduction to Health", "points": 15, "level": 100, "semesters": ["S1"], "faculty": "health", "prerequisites": [], "restrictions": []},
+  "HLTH105": {"code": "HLTH105", "title": "Human Body Systems", "points": 15, "level": 100, "semesters": ["S2"], "faculty": "health", "prerequisites": [], "restrictions": []},
+  "HLTH106": {"code": "HLTH106", "title": "Te Wero - Māori Health Issues and Opportunities", "points": 15, "level": 100, "semesters": ["S2"], "faculty": "health", "prerequisites": [], "restrictions": []},
+  "HLTH203": {"code": "HLTH203", "title": "Research Methods for Health", "points": 15, "level": 200, "semesters": ["S1"], "faculty": "health", "prerequisites": ["Any 60 pts at 100-level"], "restrictions": []},
+  "HLTH302": {"code": "HLTH302", "title": "Health Policy and Systems", "points": 15, "level": 300, "semesters": ["S1"], "faculty": "health", "prerequisites": ["HLTH203"], "restrictions": []},
+  "HLTH321": {"code": "HLTH321", "title": "Health Internship", "points": 15, "level": 300, "semesters": ["S2"], "faculty": "health", "prerequisites": ["60 pts at 200-level incl. HLTH203", "Course Coordinator approval"], "restrictions": []},
+
+  "CRJU101": {"code": "CRJU101", "title": "Introduction to Criminal Justice", "points": 15, "level": 100, "semesters": ["S1"], "faculty": "law", "prerequisites": [], "restrictions": []},
+  "CRJU150": {"code": "CRJU150", "title": "Introduction to Criminal Law", "points": 15, "level": 100, "semesters": ["S1"], "faculty": "law", "prerequisites": [], "restrictions": []},
+  "CRJU160": {"code": "CRJU160", "title": "Introduction to Legal Methods", "points": 15, "level": 100, "semesters": ["S2"], "faculty": "law", "prerequisites": [], "restrictions": []},
+
+  "SPRT101": {"code": "SPRT101", "title": "Introduction to Sport", "points": 15, "level": 100, "semesters": ["S1"], "faculty": "health", "prerequisites": [], "restrictions": []},
+  "SPRT110": {"code": "SPRT110", "title": "Practicum I", "points": 15, "level": 100, "semesters": ["S2"], "faculty": "health", "prerequisites": ["BSport enrolment", "Police vetting"], "restrictions": [], "corequisites": ["SPRT101"]},
+
+  "SOWK102": {"code": "SOWK102", "title": "Introduction to Social Work", "points": 15, "level": 100, "semesters": ["S1"], "faculty": "health", "prerequisites": [], "restrictions": []},
+
+  "ENVR101": {"code": "ENVR101", "title": "Introduction to Environmental Science", "points": 15, "level": 100, "semesters": ["S1"], "faculty": "science", "prerequisites": [], "restrictions": []},
+  "SENS101": {"code": "SENS101", "title": "Introduction to Sustainability", "points": 15, "level": 100, "semesters": ["S1"], "faculty": "arts", "prerequisites": [], "restrictions": []},
+
+  "COMS101": {"code": "COMS101", "title": "Introduction to Communication", "points": 15, "level": 100, "semesters": ["S1", "S2"], "faculty": "arts", "prerequisites": [], "restrictions": []},
+  "COMS105": {"code": "COMS105", "title": "Digital Communication", "points": 15, "level": 100, "semesters": ["S1", "S2"], "faculty": "arts", "prerequisites": [], "restrictions": []}
+}

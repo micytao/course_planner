@@ -1,0 +1,89 @@
+[
+  {
+    "code": "arts",
+    "name": "Te Kaupeka Toi Tangata | Faculty of Arts",
+    "short_name": "Faculty of Arts",
+    "description": "Explore people, culture, languages, history, sustainability, communication, digital screen, fine arts, and music.",
+    "interest_keywords": ["people", "culture", "languages", "history", "sustainability", "writing", "media", "communication", "film", "music", "art", "philosophy", "politics"],
+    "schools": [
+      "Aotahi: Māori and Indigenous Studies",
+      "School of Creative and Digital Arts",
+      "Te Kura Kōwaiwai | School of Fine Arts",
+      "School of Humanities",
+      "Te Kura Mātāpuna Tangata | School of Language, Social and Political Sciences",
+      "Te Kura Puoro | School of Music"
+    ]
+  },
+  {
+    "code": "business",
+    "name": "Te Kura Umanga | UC Business School",
+    "short_name": "UC Business School",
+    "description": "Study business, finance, management, marketing, accounting, economics, information systems, and entrepreneurship.",
+    "interest_keywords": ["business", "finance", "management", "marketing", "accounting", "economics", "entrepreneurship", "commerce"],
+    "schools": [
+      "Department of Accounting and Information Systems",
+      "Department of Economics and Finance",
+      "Department of Management, Marketing and Tourism"
+    ]
+  },
+  {
+    "code": "education",
+    "name": "Te Kaupeka Ako | Faculty of Education",
+    "short_name": "Faculty of Education",
+    "description": "Prepare for a career in teaching (early childhood, primary, or Māori bilingual settings) or youth and community leadership.",
+    "interest_keywords": ["teaching", "education", "teacher", "children", "youth", "community", "primary school", "early childhood"],
+    "schools": [
+      "School of Leadership and Professional Practice",
+      "School of Curriculum, Pedagogy and Assessment",
+      "School of Social and Cultural Studies"
+    ]
+  },
+  {
+    "code": "engineering",
+    "name": "Te Kaupeka Pūhanga | Faculty of Engineering",
+    "short_name": "Faculty of Engineering",
+    "description": "Design, build, and innovate across civil, mechanical, electrical, software, chemical, and other engineering disciplines.",
+    "interest_keywords": ["engineering", "building", "technology", "computing", "software", "coding", "robotics", "design", "construction", "infrastructure"],
+    "schools": [
+      "Department of Chemical and Process Engineering",
+      "Department of Civil and Natural Resources Engineering",
+      "Department of Computer Science and Software Engineering",
+      "Department of Electrical and Computer Engineering",
+      "School of Forestry",
+      "School of Mathematics and Statistics",
+      "Department of Mechanical Engineering",
+      "School of Product Design"
+    ]
+  },
+  {
+    "code": "health",
+    "name": "Te Kaupeka Oranga | Faculty of Health",
+    "short_name": "Faculty of Health",
+    "description": "Study health sciences, social work, sport, exercise, wellbeing, public health, and mental health.",
+    "interest_keywords": ["health", "wellbeing", "sport", "social work", "exercise", "nutrition", "mental health", "public health", "nursing"],
+    "schools": [
+      "Te Kura Mātai Hauora | School of Health Sciences"
+    ]
+  },
+  {
+    "code": "law",
+    "name": "Te Kaupeka Ture | Faculty of Law",
+    "short_name": "Faculty of Law",
+    "description": "Study law, criminal justice, policy, and the legal system. LLB is typically combined as a double degree.",
+    "interest_keywords": ["law", "justice", "criminal justice", "legal", "policy", "courts", "human rights"],
+    "schools": []
+  },
+  {
+    "code": "science",
+    "name": "Te Kaupeka Pūtaiao | Faculty of Science",
+    "short_name": "Faculty of Science",
+    "description": "Explore biological sciences, chemistry, physics, computer science, data science, psychology, geology, and more.",
+    "interest_keywords": ["science", "environment", "data", "psychology", "biology", "chemistry", "physics", "computer science", "maths", "geology", "astronomy"],
+    "schools": [
+      "School of Biological Sciences",
+      "School of Earth and Environment",
+      "School of Physical and Chemical Sciences",
+      "School of Psychology, Speech and Hearing"
+    ]
+  }
+]

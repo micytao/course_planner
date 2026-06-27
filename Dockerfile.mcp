@@ -1,0 +1,24 @@
+FROM registry.access.redhat.com/ubi9/python-312-minimal:latest
+
+WORKDIR /opt/app-root/src
+
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Only copy the lib modules the MCP server needs (not UI code):
+#   mcp_server.py    – FastMCP + Starlette entry point
+#   models.py        – Pydantic data models
+#   data_layer.py    – JSON data access layer
+#   course_engine.py – Validation rules engine
+COPY lib/__init__.py lib/__init__.py
+COPY lib/mcp_server.py lib/mcp_server.py
+COPY lib/models.py lib/models.py
+COPY lib/data_layer.py lib/data_layer.py
+COPY lib/course_engine.py lib/course_engine.py
+
+# JSON knowledge base (acts as CMS database)
+COPY knowledge/ knowledge/
+
+EXPOSE 8100
+
+CMD ["uvicorn", "lib.mcp_server:app", "--host", "0.0.0.0", "--port", "8100"]
