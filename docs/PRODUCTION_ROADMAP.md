@@ -20,15 +20,58 @@ Both services are built on `ubi9/python-312-minimal` and deployed to OpenShift a
 | `lib/course_engine.py` | Validation rules (admission, prerequisites) |
 | `lib/llm_client.py` | LLM integration with MCP tool calling |
 | `assets/SKILL.md` | Agent skill definition for AI context |
+| `deploy/Dockerfile.mcp` | Container image for the MCP server |
+| `deploy/Dockerfile.ui` | Container image for the Streamlit UI |
+| `deploy/.dockerignore.ui` | Build context exclusions for the UI image |
+| `requirements-ui.txt` | UI-only Python dependencies (excludes fastapi/uvicorn) |
+
+### Container Images
+
+| Image | Registry |
+|---|---|
+| MCP Server | `quay.io/rh-ee-micyang/uc-mcp-server` |
+| Streamlit UI | `quay.io/rh-ee-micyang/uc-course-planner-ui` |
+
+### Running Locally with Podman Compose
+
+```bash
+podman-compose up --build
+```
+
+Or individually:
+
+```bash
+podman network create course-net
+
+podman build -f deploy/Dockerfile.mcp -t quay.io/rh-ee-micyang/uc-mcp-server:latest .
+podman build -f deploy/Dockerfile.ui --ignorefile deploy/.dockerignore.ui -t quay.io/rh-ee-micyang/uc-course-planner-ui:latest .
+
+podman run --rm -d --name mcp-server \
+  --network course-net -p 8100:8100 \
+  quay.io/rh-ee-micyang/uc-mcp-server:latest
+
+podman run --rm -d --name ui-app \
+  --network course-net -p 8501:8501 \
+  -e MCP_SERVER_URL=http://mcp-server:8100 \
+  quay.io/rh-ee-micyang/uc-course-planner-ui:latest
+```
+
+### Environment Variables (UI container)
+
+| Variable | Purpose |
+|---|---|
+| `MCP_SERVER_URL` | Base URL of the MCP server (default: `http://localhost:8100`) |
+| `OPENAI_API_KEY` | API key for Chat Advisor LLM features |
 
 ## Phase 1: Demo (Complete)
 
 - 7 faculties, 18+ degrees, course data from the UC 2026 Calendar
 - MCP server with Streamable HTTP transport on port 8100
-- Streamlit UI with Chat Advisor, Course Wizard, Demo Scenarios
+- Streamlit UI with Chat Advisor, Course Wizard, Sample Scenarios
 - MCP Dashboard for live tool/resource inspection
 - Cursor IDE integration via `.cursor/mcp.json`
-- Containerised with `Dockerfile.mcp` for OpenShift deployment
+- Containerised with `Dockerfile.mcp` (MCP server) and `Dockerfile.ui` (Streamlit UI) for OpenShift deployment
+- DNS rebinding protection disabled on MCP server to allow container-to-container communication via service names
 
 ## Phase 2: Production Data Sources
 

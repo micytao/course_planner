@@ -1,0 +1,29 @@
+# Build: podman build -f deploy/Dockerfile.ui --ignorefile deploy/.dockerignore.ui -t course-planner-ui .
+FROM registry.access.redhat.com/ubi9/python-312-minimal:latest
+
+WORKDIR /opt/app-root/src
+
+COPY requirements-ui.txt requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY app.py .
+COPY pages/ pages/
+COPY lib/__init__.py lib/__init__.py
+COPY lib/models.py lib/models.py
+COPY lib/data_layer.py lib/data_layer.py
+COPY lib/course_engine.py lib/course_engine.py
+COPY lib/remote_mcp_client.py lib/remote_mcp_client.py
+COPY lib/mcp_factory.py lib/mcp_factory.py
+COPY lib/llm_client.py lib/llm_client.py
+COPY lib/prompts.py lib/prompts.py
+COPY lib/skill_loader.py lib/skill_loader.py
+COPY lib/theme.py lib/theme.py
+COPY knowledge/ knowledge/
+COPY assets/ assets/
+COPY --chown=1001:0 .streamlit/ .streamlit/
+
+EXPOSE 8501
+
+HEALTHCHECK CMD python -c "import urllib.request; urllib.request.urlopen('http://localhost:8501/_stcore/health')"
+
+CMD ["streamlit", "run", "app.py", "--server.port=8501", "--server.address=0.0.0.0"]

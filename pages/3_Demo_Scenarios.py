@@ -9,16 +9,16 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from lib.models import StudentBackground
 from lib.theme import inject_theme_css, render_theme_toggle
-from lib.mcp_factory import render_mcp_toggle, get_mcp_client, get_engine
+from lib.data_layer import CoursePlannerMCP
+from lib.course_engine import CourseEngine
 
 
-render_mcp_toggle()
 inject_theme_css()
 
-mcp = get_mcp_client()
-engine = get_engine(mcp)
+mcp = CoursePlannerMCP()
+engine = CourseEngine(mcp)
 
-st.title("Demo Scenarios")
+st.title("Sample Scenarios")
 st.caption("Pre-built student personas for live walkthrough. Select a persona to see the full course planning journey.")
 
 students = mcp.get_sample_students()

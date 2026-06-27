@@ -18,7 +18,9 @@ t = get_theme()
 st.title("MCP Dashboard")
 st.caption("Monitor the Course Planner MCP server and test tools interactively.")
 
-MCP_BASE = st.sidebar.text_input("MCP Server URL", value="http://localhost:8100", key="mcp_url")
+import os
+_default_mcp_url = os.environ.get("MCP_SERVER_URL", "http://localhost:8100")
+MCP_BASE = st.sidebar.text_input("MCP Server URL", value=_default_mcp_url, key="mcp_url")
 MCP_ENDPOINT = MCP_BASE.rstrip("/") + "/mcp"
 
 # ── Async helpers ─────────────────────────────────────────────────────

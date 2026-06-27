@@ -71,7 +71,7 @@ col1, col2, col3 = st.columns(3)
 _cards = [
     ("💬", "Chat Advisor", "Have a natural conversation with our AI-powered course advisor. Ask questions about degrees, majors, prerequisites, and more.", "pages/1_Chat_Advisor.py"),
     ("📋", "Course Wizard", "Follow a step-by-step guided flow to select your faculty, degree, major, and build a personalised Year 1 course plan.", "pages/2_Course_Wizard.py"),
-    ("🎭", "Demo Scenarios", "Explore pre-built student personas that demonstrate different pathways through the course planning process.", "pages/3_Demo_Scenarios.py"),
+    ("🎭", "Sample Scenarios", "Explore pre-built student personas that demonstrate different pathways through the course planning process.", "pages/3_Demo_Scenarios.py"),
 ]
 
 st.markdown("""<style>.card-box { min-height: 160px; display: flex; flex-direction: column; justify-content: space-between; }</style>""", unsafe_allow_html=True)

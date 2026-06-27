@@ -2,11 +2,14 @@
 
 from __future__ import annotations
 
+import os
 import streamlit as st
 
 from .data_layer import CoursePlannerMCP
 from .remote_mcp_client import RemoteMCPClient
 from .course_engine import CourseEngine
+
+_DEFAULT_MCP_URL = os.environ.get("MCP_SERVER_URL", "http://localhost:8100")
 
 
 def render_mcp_toggle() -> None:
@@ -17,17 +20,17 @@ def render_mcp_toggle() -> None:
         if st.session_state.get("mcp_remote_mode"):
             st.text_input(
                 "MCP Server URL",
-                value="http://localhost:8100",
+                value=_DEFAULT_MCP_URL,
                 key="mcp_server_url",
                 help="Base URL only — the /mcp endpoint is appended automatically.",
             )
-            st.caption(f"Endpoint: `{st.session_state.get('mcp_server_url', 'http://localhost:8100').rstrip('/')}/mcp`")
+            st.caption(f"Endpoint: `{st.session_state.get('mcp_server_url', _DEFAULT_MCP_URL).rstrip('/')}/mcp`")
 
 
 def get_mcp_client() -> CoursePlannerMCP | RemoteMCPClient:
     """Return the appropriate MCP client based on the sidebar toggle."""
     if st.session_state.get("mcp_remote_mode"):
-        url = st.session_state.get("mcp_server_url", "http://localhost:8100")
+        url = st.session_state.get("mcp_server_url", _DEFAULT_MCP_URL)
         return RemoteMCPClient(mcp_url=url)
     return CoursePlannerMCP()
 

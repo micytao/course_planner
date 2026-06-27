@@ -28,9 +28,12 @@ _engine = CourseEngine(_planner)
 
 # ── FastMCP server ───────────────────────────────────────────────────
 
+from mcp.server.transport_security import TransportSecuritySettings
+
 mcp_server = FastMCP(
     "UC Course Planner",
     stateless_http=True,
+    transport_security=TransportSecuritySettings(enable_dns_rebinding_protection=False),
 )
 
 # ── Tools ────────────────────────────────────────────────────────────

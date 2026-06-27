@@ -11,13 +11,11 @@ st.set_page_config(
 
 pg = st.navigation(
     {
-        "": [
-            st.Page("pages/0_Home.py", title="Home", icon="🏠", default=True),
-        ],
         "Planning": [
+            st.Page("pages/0_Home.py", title="Home", icon="🏠", default=True),
             st.Page("pages/1_Chat_Advisor.py", title="Chat Advisor", icon="💬"),
             st.Page("pages/2_Course_Wizard.py", title="Course Wizard", icon="📋"),
-            st.Page("pages/3_Demo_Scenarios.py", title="Demo Scenarios", icon="🎭"),
+            st.Page("pages/3_Demo_Scenarios.py", title="Sample Scenarios", icon="🎭"),
         ],
         "Knowledge": [
             st.Page("pages/4_Skills_Manager.py", title="Skills Manager", icon="📖"),

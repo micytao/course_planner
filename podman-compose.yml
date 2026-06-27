@@ -1,0 +1,29 @@
+services:
+  mcp-server:
+    build:
+      context: .
+      dockerfile: deploy/Dockerfile.mcp
+    image: quay.io/rh-ee-micyang/uc-mcp-server:latest
+    ports:
+      - "8100:8100"
+    networks:
+      - course-net
+
+  ui:
+    build:
+      context: .
+      dockerfile: deploy/Dockerfile.ui
+    image: quay.io/rh-ee-micyang/uc-course-planner-ui:latest
+    ports:
+      - "8501:8501"
+    environment:
+      - MCP_SERVER_URL=http://mcp-server:8100
+      - OPENAI_API_KEY=${OPENAI_API_KEY:-}
+    depends_on:
+      - mcp-server
+    networks:
+      - course-net
+
+networks:
+  course-net:
+    driver: bridge

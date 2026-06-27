@@ -43,7 +43,9 @@ def _load_remote(filename: str) -> dict | list:
     uri = _RESOURCE_MAP.get(filename)
     if not uri:
         return {}
-    url = st.session_state.get("mcp_server_url", "http://localhost:8100").rstrip("/") + "/mcp"
+    import os
+    _fallback = os.environ.get("MCP_SERVER_URL", "http://localhost:8100")
+    url = st.session_state.get("mcp_server_url", _fallback).rstrip("/") + "/mcp"
     try:
         loop = asyncio.get_running_loop()
     except RuntimeError:

@@ -10,7 +10,7 @@ Welcome to the UC Course Planner! This tool helps you explore degrees, choose a 
 2. You will land on the **Home** page, which shows three options:
    - **Chat Advisor** — talk to a virtual course advisor
    - **Course Wizard** — follow a step-by-step guide
-   - **Demo Scenarios** — see example student journeys
+   - **Sample Scenarios** — see example student journeys
 
 Pick whichever mode suits you best. You can switch between them at any time using the **sidebar** on the left, where pages are grouped under **Planning** and **Knowledge** sections.
 
@@ -148,7 +148,7 @@ Click the **Clear Chat** button in the sidebar to start a fresh conversation.
 
 ---
 
-## Option C: Demo Scenarios
+## Option C: Sample Scenarios
 
 This page shows five pre-built student personas that demonstrate different pathways through the tool. It is mainly designed for Open Day staff demonstrations, but students are welcome to explore it too.
 

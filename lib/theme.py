@@ -46,7 +46,6 @@ def get_theme() -> dict[str, str]:
 def render_theme_toggle() -> None:
     """Render a dark/light toggle at the bottom of the sidebar."""
     with st.sidebar:
-        st.markdown("---")
         current = _is_dark()
         label = "Dark Mode" if not current else "Light Mode"
         if st.button(f"Switch to {label}", key="theme_toggle", use_container_width=True):
