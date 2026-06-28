@@ -1,0 +1,75 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: uc-course-planner
+  namespace: uc-course-planner
+  labels:
+    app: uc-course-planner
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: uc-course-planner
+  template:
+    metadata:
+      labels:
+        app: uc-course-planner
+    spec:
+      containers:
+        - name: mcp-server
+          image: quay.io/rh_ee_micyang/uc-mcp-server:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8100
+              protocol: TCP
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: 8100
+            initialDelaySeconds: 5
+            periodSeconds: 10
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: 8100
+            initialDelaySeconds: 10
+            periodSeconds: 30
+          resources:
+            requests:
+              memory: "128Mi"
+              cpu: "100m"
+            limits:
+              memory: "512Mi"
+              cpu: "500m"
+
+        - name: ui
+          image: quay.io/rh_ee_micyang/uc-course-planner-ui:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8501
+              protocol: TCP
+          envFrom:
+            - configMapRef:
+                name: uc-course-planner-config
+            - secretRef:
+                name: uc-course-planner-secrets
+                optional: true
+          readinessProbe:
+            httpGet:
+              path: /_stcore/health
+              port: 8501
+            initialDelaySeconds: 10
+            periodSeconds: 10
+          livenessProbe:
+            httpGet:
+              path: /_stcore/health
+              port: 8501
+            initialDelaySeconds: 15
+            periodSeconds: 30
+          resources:
+            requests:
+              memory: "256Mi"
+              cpu: "100m"
+            limits:
+              memory: "1Gi"
+              cpu: "1000m"

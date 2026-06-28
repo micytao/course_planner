@@ -1,0 +1,17 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: uc-course-planner
+  namespace: uc-course-planner
+  labels:
+    app: uc-course-planner
+spec:
+  to:
+    kind: Service
+    name: uc-course-planner
+    weight: 100
+  port:
+    targetPort: ui
+  tls:
+    termination: edge
+    insecureEdgeTerminationPolicy: Redirect

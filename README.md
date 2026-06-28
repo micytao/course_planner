@@ -42,17 +42,17 @@ Or manually:
 ```bash
 podman network create course-net
 
-podman build -f deploy/Dockerfile.mcp -t quay.io/rh-ee-micyang/uc-mcp-server:latest .
-podman build -f deploy/Dockerfile.ui --ignorefile deploy/.dockerignore.ui -t quay.io/rh-ee-micyang/uc-course-planner-ui:latest .
+podman build -f deploy/Dockerfile.mcp -t quay.io/rh_ee_micyang/uc-mcp-server:latest .
+podman build -f deploy/Dockerfile.ui --ignorefile deploy/.dockerignore.ui -t quay.io/rh_ee_micyang/uc-course-planner-ui:latest .
 
 podman run --rm -d --name mcp-server \
   --network course-net -p 8100:8100 \
-  quay.io/rh-ee-micyang/uc-mcp-server:latest
+  quay.io/rh_ee_micyang/uc-mcp-server:latest
 
 podman run --rm -d --name ui-app \
   --network course-net -p 8501:8501 \
   -e MCP_SERVER_URL=http://mcp-server:8100 \
-  quay.io/rh-ee-micyang/uc-course-planner-ui:latest
+  quay.io/rh_ee_micyang/uc-course-planner-ui:latest
 ```
 
 Open http://localhost:8501 in your browser.

@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: uc-course-planner-config
+  namespace: uc-course-planner
+data:
+  MCP_SERVER_URL: "http://localhost:8100"
+  OPENAI_BASE_URL: "http://llama-32-3b-instruct-predictor.my-first-model.svc.cluster.local:8080/v1"
+  OPENAI_MODEL: "llama-32-3b-instruct"

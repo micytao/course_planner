@@ -1,5 +1,6 @@
 """Conversational chatbot page for course planning advice."""
 
+import os
 import streamlit as st
 import sys
 from pathlib import Path
@@ -59,10 +60,10 @@ with st.sidebar:
     if use_ai:
         base_url = st.text_input(
             "Endpoint URL",
-            value="https://maas-rhdp.apps.maas.redhatworkshops.io/v1",
+            value=os.environ.get("OPENAI_BASE_URL", "https://maas-rhdp.apps.maas.redhatworkshops.io/v1"),
             help="OpenAI-compatible API endpoint (e.g. MaaS, vLLM, Ollama).",
         )
-        api_key = st.text_input("API Key", type="password", value="", help="Your API key for the endpoint.")
+        api_key = st.text_input("API Key", type="password", value=os.environ.get("OPENAI_API_KEY", ""), help="Your API key for the endpoint.")
 
         if st.button("Fetch Models", key="fetch_models"):
             with st.spinner("Fetching models..."):
@@ -82,7 +83,7 @@ with st.sidebar:
                 help="Choose a model from the available models on this endpoint.",
             )
         else:
-            model = st.text_input("Model", value="", help="Enter a model name, or use Fetch Models above.")
+            model = st.text_input("Model", value=os.environ.get("OPENAI_MODEL", ""), help="Enter a model name, or use Fetch Models above.")
 
         if st.button("Connect", key="connect_llm"):
             if not model:
